@@ -89,8 +89,10 @@ body {
 }
 
 .menu a:hover {
-    background-color: #807976;
-    }
+    color: #807976;
+    font-weight: bold;
+}
+
 
 /* OBSAH */
 
@@ -110,12 +112,12 @@ body {
 }
 
 p {
-    padding: 0px 20px;
+    padding: 0px 50px;
     color: #313131;
 }
 
 h2 {
-    padding: 0px 20px;
+    padding: 0px 50px;
     margin-top: 30px;
     font-family: 'Raleway', serif;
     color: #313131;
@@ -123,11 +125,19 @@ h2 {
 
 .modra {
     margin: 0 0 20px 0;
-    border-top: 4px solid rgb(85, 153, 248);
-    width: 75px;
+    border-top: 3px solid rgb(85, 153, 248);
+    width: 100px;
 }
 
+.uvod, 
+.procnaisland,
+.covidet,
+.fotoisland1,
+.island3 {
+    display: flex;
+    flex-direction: column;
 
+}
 
 /* FOTOGALERIE */
 
@@ -158,16 +168,16 @@ h2 {
 
 /* PATICKA */
 
-footer {
+.footer {
     padding-top: 30px;
     font-size: small;
 }
 
-footer p {
+.footer p {
     color: gray;
 }
 
-footer a {
+.footer a {
     color: gray;
 } 
 
@@ -261,8 +271,59 @@ footer a {
         color: white;
     }
 
-    /* .body2 {
-        box-shadow: 10px 30px 30px -30px rgba(0, 0, 0, 0.5); */
+    .galerie {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .foto {
+        width: 33.333%;
+    }
+
+    .menu {
+        float: left;
+        width: 30%;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .uvod {
+        margin-top: 4px;
+        padding-top: 40px;
+        margin-right: 40px;
+    }
+
+    .proPC {
+        width: 960px;
+        align-self: center;
+        background-color: white;
+        -webkit-box-shadow: -1px 30px 50px 8px #888888;
+        -moz-box-shadow: -1px 30px 50px 8px #888888;
+        box-shadow: -1px 30px 50px 8px #888888;
+        /* position: relative;
+        bottom: 60px; */
+        margin-top: -60px;
+    }
+
+    .autor {
+        padding-bottom: 80px;
+    }
+
+    .footer {
+        width: 1000px;
+        align-self: center;
+        text-align: left;
+        padding: 0;
+    }
+
+    .posun {
+        padding-left: 200px;
+    }
+
+    .covidet {
+        margin-bottom: 25px;
+    }
+    
     }
 
 
